@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>payment form</title>
+    <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+    <div class="container">
+   <form action="" method="get" >
+    <h1 class="heading">Payment form</h1>
+    <p>Following field are required</p>
+    <h2>User information </h2>
+    <p>Name :  <br>
+        *<input type="text" required>
+    </p>
+    <fieldset>
+        <legend>Gender</legend>
+        <p>Male <input type="radio" name="Gender" id="Male">
+        Female <input type="radio" name="Gender" id="Female">
+        Transgender <input type="radio" name="Gender" id="transgender">
+        </p>
+    </fieldset>
+    <p>Address: <br>
+         *<textarea name="address" id="address" cols="30" rows="10"></textarea></p>
+    <p>Email:  <br>
+        <input type="email" name="email" id="email" required></p>
+    <p>pincode: <br>
+         <input type="number" name="pincode" id="pincode" required></p>
+    <h2 >Payment information </h2>
+    <p required>Card Type*
+        <br>
+        <select name="card_type" id="card_type">
+            <option value="">Select a card_type</option>
+            <option value="visa">visa</option>
+            <option value="rupay">rupay</option>
+            <option value="mastercard">mastercard</option>
+        </select>
+    </p>
+    <p>
+        Card number *
+        <br>
+        <input type="number" name="card number" id="card number">
+    </p>
+    <p>Expiration Date <br>
+        <input type="date" name="exp_date" id="exp_date" required>
+    </p>
+    <p>CVV 
+        <br>
+        <input type="password" name="cvv" id="cvv" required> </p>
+        <input type="submit" value="pay Now">
+        
+   </form>
+   </div>
+ 
+   
+</body>
+</html>
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 15px 30px;
+    font-size: 18px;
+    padding: 8px;
+}
+.container {
+    background-color: rgb(212, 223, 243);
+    padding: 5px 20px 25px 25px;
+    border: 2px solid rgb(60, 60, 94);
+    border-radius: 10px;
+}
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="password"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgb(236, 230, 230);
+    font-weight:500px ;
+    margin: 10px;
+
+}
+fieldset {
+    background-color: rgb(217, 230, 248);
+}
+.heading {
+    text-align: center;
+}
+input[type="submit"] {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(157, 218, 245);
+    color: rgb(9, 37, 61);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+input[type="submit"]:hover  {
+    background-color: rgb(107, 176, 255);
+
+}
+
